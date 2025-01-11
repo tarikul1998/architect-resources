@@ -55,62 +55,133 @@
   font-weight: 500;
 }
 
-.navbar,  .banner {
+.navbar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
- 
+}
+/* banner related styles */
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
- /* banner related styles */
-.banner-content{
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 50px;
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
 }
 
-.banner-title{
-    font-weight: 700;
-    font-size: 4rem;
+.banner-image {
+  width: 100%;
 }
 
-.banner-image{
-    width: 100%;
-}
-
-main{
-  /* max-width: 1440px; */
-  /* margin: 0 auto;  */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
   /* border: 5px solid yellow; */
 }
 
-main > section{
-  /* margin-top: 130px; */
-  /* border: 5px solid maroon; */
-} 
+main > section {
+  margin-top: 130px;
+}
 
 /*team and feature related styles*/
 
-.teams{
-  /* align-items: center; */
+.teams {
+  align-items: center; /*vertically align korbe 2ta div ke*/
 }
 
-.team-img-container{
-  /* display: grid; */
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* gap: 24px; */
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
-.our-features{
-  /* margin-left: 130px; */
-  /* max-width: 530px; */
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
 }
 
-.section-title{
-    /* font-size: 2.8rem; */
-    /* font-weight: 700; */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
 }
-#quick-list{
+#quick-list {
+  font-weight: 500;
+}
+
+/* features section related styles */
+.features {
+  gap: 140px;
+}
+
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+
+.feature-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#experience-badge {
+  /* padding: 45px 42px; */
+  /* font-size: 1.5rem; */
   /* font-weight: 500; */
+  /* margin-left: -100px; */
+  /* margin-top: -100px; */
+}
+
+#experience-year {
+  /* font-size: 4rem; */
+  /* font-weight: 700; */
+}
+
+.featured-architect img {
+  width: 100%;
+}
+
+/* some facts related styles */
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.fact-description {
+  max-width: 540px;
 }
 
 
@@ -125,8 +196,30 @@ main > section{
 
 
 
-/* @media screen and (max-width:576px) {
-    .navbar, .nav-links{
-        flex-direction: column;
-    }
-} */
+
+
+/* small size device for mobile */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features {
+    margin-left: 20px;
+  }
+}
+
+/* medium size device for tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    /*rotate kore dekhle bujhbo = in Iphone 12 Pro*/
+    flex-direction: column;
+  }
+  .our-features {
+    margin-left: 50px auto;
+  }
+}
