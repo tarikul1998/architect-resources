@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="work-sans-font">
-    <header class="bg-light">
+    <header class="bg-light hide">
         <!-- navbar part -->
         <nav class="navbar d-flex">
        
@@ -35,7 +35,7 @@
    
     <main>
         <!-- teams section start -->
-        <section class="teams d-flex">
+        <section class="teams d-flex hide">
             <!-- 1st Part -->
             <div class="team-img-container">
                 <img src="images/team1.png" alt="">
@@ -57,11 +57,12 @@
     
     
         <!-- features section start -->
-         <section class="features d-flex hide">
+         <section class="features d-flex">
             <!-- 1st Part -->
             <div>
                 <h3 id="feature-section-title" class="section-title">Features you will <br> love & enjoy</h3>
                 <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+             
                 <!-- feature card container -->
                 <div class="feature-card">
                     <h4 class="feature-title">Desktop & Mobile Version</h4>
@@ -84,12 +85,18 @@
            <!-- 2nd Part -->
              <div class="featured-architect">
                 <img src="images/architect.png" alt="">
+                <button id="exp-badge" class="btn-primary">
+                    <span id="exp-year">10+Years</span>
+                    <br>
+                    <span>Experience</span>
+                </button>
              </div>
          </section>
         
     
+ 
          <!-- facts section start -->
-         <section class="emni">
+         <section class="emni hide">
             <h3 class="section-title">Some Facts</h3>
             <p class="text-light-gray fact-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
            
@@ -130,8 +137,10 @@
             </section>
         </section>
 
+     
+     
         <!-- sponsors section start -->
-        <section class="our-sponsors" style="border: 2px solid darkcyan;">
+        <section class="our-sponsors hide">
             <!-- 1st Part -->
             <div class="sponsor-info">
                 <h3 class="section-title">Our Sponsors</h3>
