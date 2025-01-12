@@ -137,21 +137,21 @@ main > section {
   margin-bottom: 0px;
 }
 
-#experience-badge {
-  /* padding: 45px 42px; */
-  /* font-size: 1.5rem; */
-  /* font-weight: 500; */
-  /* margin-left: -100px; */
-  /* margin-top: -100px; */
+#exp-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
 }
 
-#experience-year {
-  /* font-size: 4rem; */
-  /* font-weight: 700; */
+#exp-year {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .featured-architect img {
-  /* width: 100%; */
+  width: 100%;
 }
 
 
@@ -223,9 +223,9 @@ main > section {
   display: none;
 }
 
-/* small size device for mobile */
+/* For mobile device */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links, .teams {
+  .navbar, .nav-links, .teams, .features {
     flex-direction: column;
   }
   
@@ -246,20 +246,35 @@ main > section {
     justify-items: center;
     gap: 30px;
   }
+ 
+  #exp-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
-/* medium size device for tablet */
+
+/* For tablet device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+ 
+  .teams, .features {
     /*rotate kore dekhle bujhbo = in Iphone 12 Pro*/
     flex-direction: column;
   }
+  
   .our-features {
     margin-left: 50px auto;
   }
+ 
   .facts-container, .sponsor-companies{
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     justify-items: center;
   }
+
+  #exp-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
 }
